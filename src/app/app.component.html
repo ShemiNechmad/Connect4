@@ -1,0 +1,16 @@
+<div class="maindiv" width="100%">
+  <h1><span class="red">Blur</span> vs <span class="blue">Oasis</span></h1>
+  <p>Who's first to gather his 4 band members together?</p>
+  <br>
+  <div class="boxbg">
+    <button (click)="newGame()">New Game</button>
+    <span class="monitor" id="monitor">Blur, you go first</span><br><br>
+    <div class=clearfix></div>
+    <span class="aligner" *ngFor="let row of box; let i= index;">
+      <span class="box" *ngFor="let col of row; let j=index;" >
+        <span [id]="box[i][j]" class=whiteCircle (click)="click($event,i,j)"></span>
+      </span>
+    </span>
+    <br>  
+  </div>
+</div>
