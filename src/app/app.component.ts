@@ -83,7 +83,7 @@ playanim(a:any,j:any){
 
 checkVertical(){
   for (let i=0; i<3; i++){
-    for (let j=0; j<6; j++){
+    for (let j=0; j<7; j++){
     if (this.box2[i][j]==this.checker && this.box2[i+1][j]==this.checker && this.box2[i+2][j]==this.checker && this.box2[i+3][j]==this.checker)
       {
         this.winnerSlot1=this.box[i][j]; this.winnerSlot2=this.box[i+1][j]; this.winnerSlot3=this.box[i+2][j]; this.winnerSlot4=this.box[i+3][j];
